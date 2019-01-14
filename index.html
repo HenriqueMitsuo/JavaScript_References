@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <script src="main.js"></script> -->
+  </head>
+  <body>
+    <div class="header">
+      <h1>Vanilla Javascript</h1>
+      <p>Referencias para Javascript</p>
+    </div>
+    <h1 id="tempo"></h1>
+    <div class="container">
+      <button onclick="mudarTexto(this)">Clique</button>
+      <button onclick="tempo()">Mostrar tempo</button>
+    </div>
+
+    <script>
+      function mudarTexto(id) {
+        id.innerHTML = "Voçe clicou!";
+      }
+      function tempo() {
+        var tempo = document.getElementById("tempo");
+        tempo.innerHTML = Date();
+      }
+    </script>
+  </body>
+</html>
